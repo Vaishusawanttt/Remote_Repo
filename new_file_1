@@ -1,0 +1,11 @@
+---
+ - name: this is file for globle variable
+ hosts: all
+ vars:
+   URL: "this message is from globle var"
+ tasks:
+   - name: this is first trial
+     debug:
+       msg: "{{URL}}"
+...
+          
