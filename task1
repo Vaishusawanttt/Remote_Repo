@@ -1,0 +1,9 @@
+---
+- name: file var playbook
+  hosts: all
+  var_files: demo.yml
+  tasks:
+    - name: first task
+      debug:
+        msg: "{{URL}}"
+...        
