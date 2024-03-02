@@ -1,7 +1,7 @@
 ---
 - name: file var playbook
   hosts: all
-  var_files: demo.yml
+  vars_files: demo.yml
   tasks:
     - name: first task
       debug:
