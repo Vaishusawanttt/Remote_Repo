@@ -1,6 +1,6 @@
 ---
 - name: package installation for both redhat and debian family
-  hosts: redhat,ubuntu
+  hosts: all
   become: true
   tasks:
     - name: package installation for debian family
