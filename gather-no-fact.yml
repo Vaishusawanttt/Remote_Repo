@@ -1,0 +1,10 @@
+---
+- name: hather fact NO
+  hosts: all
+  become: true
+  gather_facts: no 
+  tasks:
+    - name: second trail
+      debug:
+        msg: "this is trail again"
+...
